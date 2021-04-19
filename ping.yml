@@ -1,0 +1,6 @@
+---
+  - hosts: all
+
+    tasks:
+      - name: ping
+        shell: ping -c 2 10.147.106.128
