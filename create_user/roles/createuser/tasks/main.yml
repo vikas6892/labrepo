@@ -1,0 +1,16 @@
+---
+
+- name: Add User
+  user: 
+    name: "{{ user }}" 
+    state: present
+    password: "{{ password }}"
+    update_password: always
+#    password: "{{ password }}"
+
+#- name: Change User Password 
+#  shell: echo ""{{ user }}":Adidas123" | chpasswd -e
+#  shell: echo ""{{ user }}":"{{ password }}"" | chpasswd -e
+# tasks file for create_user
+#
+#
