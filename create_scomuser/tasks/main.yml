@@ -1,0 +1,3 @@
+---
+# tasks file for create_scomuser
+- import_tasks: create_user.yml
