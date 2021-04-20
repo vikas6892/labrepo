@@ -1,0 +1,8 @@
+---
+
+- name: Create scomuser User
+  hosts: all
+  become: yes
+ 
+  roles:
+  - create_scomuser
