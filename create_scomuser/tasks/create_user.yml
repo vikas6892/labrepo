@@ -4,4 +4,4 @@
   user: name=scomuser state=present
 
 - name: Change Password Scomuser
-- shell: echo 'scomuser:{{ password }}' | chpasswd -e
+  shell: echo 'scomuser:{{ password }}' | chpasswd -e
