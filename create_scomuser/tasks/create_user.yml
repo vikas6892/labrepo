@@ -1,7 +1,7 @@
 --- 
 
 - name: Add scomuser
-  user: name=scomuser state=present
+  user: name="{{ user }}" state=present
 
 - name: Change Password Scomuser
-  shell: echo 'scomuser:{{ password }}' | chpasswd -e
+  shell: echo '{{ user }}:{{ password }}' | chpasswd -e
